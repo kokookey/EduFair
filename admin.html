@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Blast Undangan - Edu Fair 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero hero-admin">
+        <div class="container">
+            <h1>Panel Blast Undangan</h1>
+            <p>Unggah file <code>data-tamu.csv</code> untuk membuat tautan undangan personal secara otomatis.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h3>1. Unggah File CSV Tamu</h3>
+            <div class="upload-box">
+                <input type="file" id="csv-file-input" accept=".csv">
+                <p class="hint">Pastikan format header CSV: <code>id,nama_tamu,instansi,kategori,no_whatsapp</code></p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3>2. Daftar Tamu & Generator Tautan</h3>
+            <div class="table-responsive">
+                <table id="guest-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nama Tamu</th>
+                            <th>Instansi</th>
+                            <th>Kategori</th>
+                            <th>No. WhatsApp</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="guest-table-body">
+                        <tr>
+                            <td colspan="6" class="text-center">Belum ada data CSV yang diunggah.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

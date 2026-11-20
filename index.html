@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Edu Fair & Career Day 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <span class="badge">UNDANGAN RESMI</span>
+            <h1>Edu Fair & Career Day 2026</h1>
+            <p class="subtitle">"Bridging Future Talents with Global Opportunities"</p>
+            
+            <div class="guest-card">
+                <p>Kepada Yth. Bapak/Ibu/Saudara/i:</p>
+                <h2 id="guest-name">Tamu Undangan</h2>
+                <span id="guest-category" class="category-pill">Umum</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Informasi Waktu & Tempat -->
+        <section class="card">
+            <h3>Waktu & Lokasi Pelaksanaan</h3>
+            <p><strong>Hari/Tanggal:</strong> Sabtu, 28 November 2026</p>
+            <p><strong>Waktu:</strong> 08.00 – 15.00 WIB</p>
+            <p><strong>Tempat:</strong> Lapangan SMKN 6, Tangerang Selatan</p>
+            
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0030725559573!2d106.66350157356062!3d-6.263324093725266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb06a47e36b7%3A0x93b22c3ee1f216b1!2sSMKN%206%20Tangerang%20Selatan!5e0!3m2!1sid!2sid!4v1795187299529!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>" 
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Rundown & Benefit -->
+        <div class="grid-2">
+            <section class="card">
+                <h3>Rundown Acara</h3>
+                <ul class="list-styled">
+                    <li><strong>08.00 - 09.00:</strong> Registrasi & Pembukaan</li>
+                    <li><strong>09.00 - 10.30:</strong> Seminar Karir & Industri</li>
+                    <li><strong>10.30 - 14.30:</strong> Kunjungan Booth & Walk-in Interview</li>
+                    <li><strong>14.30 - 15.00:</strong> Penutupan & Penyerahan Plakat</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h3>Benefit Booth Mitra</h3>
+                <ul class="list-styled">
+                    <li>Booth ukuran 3x3m dengan fasilitas meja, kursi, dan listrik.</li>
+                    <li>Akses langsung ke 500+ talenta lulusan siap kerja/kuliah.</li>
+                    <li>Publikasi logo instansi di seluruh media promosi acara.</li>
+                    <li>Konsumsi & sertifikat penghargaan mitra resmi.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Form RSVP -->
+        <section class="card">
+            <h3>Konfirmasi Kehadiran (RSVP)</h3>
+            <form id="rsvp-form">
+                <div class="form-group">
+                    <label for="rsvp-instansi">Nama Instansi / Tamu</label>
+                    <input type="text" id="rsvp-instansi" required>
+                </div>
+                <div class="form-group">
+                    <label for="rsvp-status">Status Kehadiran</label>
+                    <select id="rsvp-status" required>
+                        <option value="Hadir">Hadir (Membuka Booth / Hadir Sesi)</option>
+                        <option value="Perwakilan">Hadir (Diwakilkan)</option>
+                        <option value="Tidak Hadir">Berhalangan Hadir</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="rsvp-jumlah">Jumlah Perwakilan yang Hadir</label>
+                    <input type="number" id="rsvp-jumlah" min="0" max="10" value="1" required>
+                </div>
+                <button type="submit" class="btn-primary">Kirim Konfirmasi</button>
+            </form>
+            <div id="rsvp-feedback" class="feedback-msg hidden"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Panitia Edu Fair & Career Day - Jurusan RPL</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
